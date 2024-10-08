@@ -126,7 +126,7 @@ body {
     }
   }
 }
-
+//SECTION MAIN
 .header-img {
   grid-column: 1 / 3;
   grid-row: 1 / 2;
@@ -271,6 +271,9 @@ body {
   .header-img--img {
     height: 40rem;
   }
+  body {
+    transition: all 0.3s;
+  }
 }
 
 .menu {
@@ -282,7 +285,7 @@ body {
   right: 0;
   padding: 3rem;
   top: 0;
-  backdrop-filter: blur(45px);
+  transition: all 0.3s;
 
   &-close {
     height: 5rem;
@@ -316,11 +319,11 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(24, 22, 49, 0.568);
+  background-color: rgb(7 6 22 / 57%);
   z-index: 100;
-  transition: all 0.5s;
 }
 
 .hidden {
-  display: none;
+  opacity: 0;
+  transform: translateX(100%);
 }
