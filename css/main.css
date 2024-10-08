@@ -1,0 +1,35 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1;
+  font-size: 1.5rem;
+}
+
+.container {
+  max-width: 150rem;
+  margin: 5rem auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4.8rem;
+}
+.nav__list {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+}
+.nav__list-link:link, .nav__list-link:visited {
+  text-decoration: none;
+}
