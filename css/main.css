@@ -143,6 +143,7 @@ body {
 }
 .news__list-item:last-child {
   border-bottom: 0;
+  padding: 0;
 }
 .news__list-description {
   line-height: 1.6;
@@ -181,4 +182,120 @@ body {
   font-size: 1.8rem;
   color: var(--darkgrayblue);
   line-height: 1.6;
+}
+
+@media only screen and (max-width: 70em) {
+  .grid {
+    grid-template-rows: 1fr 0.5fr 0.3fr;
+  }
+  .container {
+    max-width: 100rem;
+  }
+  .secondary-heading {
+    margin-bottom: 1rem;
+  }
+  .header-img {
+    height: 100%;
+  }
+  .header-img--img {
+    height: 100%;
+  }
+  .articles {
+    flex-direction: column;
+  }
+  .articles__img--img {
+    width: 100%;
+    height: 25rem;
+  }
+}
+@media only screen and (max-width: 45em) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .container {
+    max-width: 55rem;
+  }
+  .news {
+    order: 3;
+  }
+  .heading {
+    order: 1;
+  }
+  .desc {
+    order: 2;
+  }
+  .articles {
+    flex-direction: row;
+    order: 4;
+    margin-top: 1rem;
+  }
+  .articles__img--img {
+    height: 11rem;
+    width: 10rem;
+    object-fit: contain;
+  }
+}
+@media only screen and (max-width: 27em) {
+  html {
+    font-size: 50%;
+  }
+  .container {
+    max-width: 46rem;
+  }
+  .nav__list {
+    display: none;
+  }
+  .header-img--img {
+    height: 40rem;
+  }
+}
+.menu {
+  height: 100vh;
+  width: 75%;
+  background-color: var(--offwhite);
+  position: absolute;
+  z-index: 1000;
+  right: 0;
+  padding: 3rem;
+  top: 0;
+  backdrop-filter: blur(45px);
+}
+.menu-close {
+  height: 5rem;
+  margin-left: auto;
+}
+.menu__img-block {
+  width: 100%;
+}
+.menu .menu-close {
+  display: inline-block;
+  margin-left: 28rem;
+}
+.menu__list {
+  margin-top: 17rem;
+  font-size: 4rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.menu__list-item a {
+  text-decoration: none;
+  color: black;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(24, 22, 49, 0.568);
+  z-index: 100;
+  transition: all 0.5s;
+}
+
+.hidden {
+  display: none;
 }
