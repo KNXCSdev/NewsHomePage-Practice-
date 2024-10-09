@@ -184,6 +184,10 @@ body {
   line-height: 1.6;
 }
 
+.icon-menu {
+  z-index: 1111;
+}
+
 @media only screen and (max-width: 70em) {
   .grid {
     grid-template-rows: 1fr 0.5fr 0.3fr;
@@ -252,6 +256,9 @@ body {
   body {
     transition: all 0.3s;
   }
+  .icon-menu {
+    display: block;
+  }
 }
 .menu {
   height: 100vh;
@@ -270,10 +277,6 @@ body {
 }
 .menu__img-block {
   width: 100%;
-}
-.menu .menu-close {
-  display: inline-block;
-  margin-left: 28rem;
 }
 .menu__list {
   margin-top: 17rem;
