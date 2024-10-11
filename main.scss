@@ -119,6 +119,7 @@ body {
     &-link:visited {
       text-decoration: none;
       transition: all 0.3s;
+      color: var(--verydarkblue);
     }
     &-link:hover,
     &-link:active {
@@ -201,6 +202,7 @@ body {
 
 .icon-menu {
   z-index: 1111;
+  display: none;
 }
 
 @media only screen and (max-width: 70em) {
